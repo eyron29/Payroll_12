@@ -233,27 +233,6 @@ public class EmployeeList {
                 taxRate = regPay * 0.05;
                 netPay = (regPay + otPay) - taxRate;
             }
-//            else {// SOD: Single W/O Dependent
-//                regPay = hoursWorked * hourlyRate;
-//                otHours = hoursWorked - regHours;
-//                otPay =  otHours * hourlyRate * 1.5;
-//                taxRate = regPay * 0.10;
-//                netPay = (regPay + otPay) - taxRate;
-//            }
-//        } else {
-//
-//            if(statCode.equals("SWD")){ //SWD: Single With Dependent
-//                regPay = hoursWorked * hourlyRate;
-//                otPay =  0;
-//                taxRate = regPay * 0.05;
-//                netPay = regPay - taxRate;
-//            } else {// SOD: Single W/O Dependent
-//                regPay = hoursWorked * hourlyRate;
-//                otHours = hoursWorked - regHours;
-//                otPay =  0;
-//                taxRate = regPay * 0.10;
-//                netPay = regPay - taxRate;
-//            }
         }
         return netPay;
     }//computeSalary
